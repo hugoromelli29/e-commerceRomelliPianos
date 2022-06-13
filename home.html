@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Romelli Pianos</title>
+		<link rel="stylesheet" href="reset.css">
+   		<link rel="stylesheet" href="romelli.css">
+   		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+	</head>
+	
+	<body>
+
+	<button class="go-top-btn">
+    <img src="imagens/arrow-up.png" alt="arrow up">
+    </button>
+
+	<header>
+
+			<!--Comandos do Menu-->
+				<input type="checkbox" id="check">
+				<label id="icone" for="check"><img src="imagens/menu.svg"></label>
+				<div class="barra">
+				<nav>
+				<a href="home.html">Home</a>
+				<a href="produtos.html" target="_blank">Produtos</a>
+				<a href="contato.html"  target="_blank">Fale conosco</a>				
+				</nav>
+				</div>
+			<!--Fim dos comandos do Menu-->
+		    
+			<section>
+				<h1><img src="imagens/logo.svg" class="logo"></h1>
+			</section>
+	</header>
+
+	<img src="imagens/piano.jpg" width="100%">
+
+	<main>
+
+		<section class="informacoes">
+			<h2 class="titulo-esquerda">Quem somos?</h2>
+			<p>Uma loja de pianos com 12 anos no mercado, especializada em ajudar milhares de pianistas a relizar o sonho de adquirir seu primeiro piano ou trocar seu usado por um novo.</p>
+			<h2 class="titulo-direita">Nossa missão</h2>
+			<p>Viabilizar sonhos, proporcionar experiências, marcar a vida dos nossos clientes e contribuir para o crescimento da Arte e da Cultura.</p>
+			<h2 class="titulo-esquerda">Nosso Fundador</h2>
+			<p>Hugo Romelli, pianista de formação e de coração, é o homem por trás dessa marca que leva melodia para tantos lares e estabelecimentos. "A satisfação dos meus clientes é meu maior pagamento", comenta o fundador.</p>
+		</section>
+
+		<section class="curiosidades" id="curiosidades">
+			<h3>Curiosidades sobre o piano</h3>
+			<ul class="lista-curiosidades">
+				<li>
+					<!--Comandos da Janela Modal-->
+					<input type="checkbox" id="jm-check"><label for="jm-check">O primeiro piano</label>
+					<div class="fundo-modal">
+						<div class="janela-modal">
+							<h1>O primeiro piano</h1>
+							<p>O primeiro piano construído foi feito em 1698 por Bartolomeo Cristofori na Itália.</p>
+							<label for="jm-check"><h2>Fechar</h2></label>
+						</div>
+					</div>
+					<!--Fim Comandos da Janela Modal-->
+				</li>
+				<li>
+					<input type="checkbox" id="jm2-check"><label for="jm2-check">A família do piano</label>
+						<div class="fundo-modal">
+							<div class="janela-modal">
+								<h1>A família do piano</h1>
+								<p>O piano é geralmente considerado um membro da família de percussão, porque só faz barulho quando um martelo atinge uma corda.</p>
+								<label for="jm2-check"><h2>Fechar</h2></label>
+							</div>
+						</div>
+				</li>
+				<li>
+					<input type="checkbox" id="jm3-check"><label for="jm3-check">Quantas partes?</label>
+					<div class="fundo-modal">
+						<div class="janela-modal">
+							<h1>Quantas partes?</h1>
+							<p>Existem 7500 partes em cada piano, um número enorme de pequenas peças que precisam estar funcionando perfeitamente para obter o som que você precisa!</p>
+							<label for="jm3-check"><h2>Fechar</h2></label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<input type="checkbox" id="jm4-check"><label for="jm4-check">Sobre as cordas</label>
+					<div class="fundo-modal">
+						<div class="janela-modal">
+							<h1>Sobre as cordas</h1>
+							<p>Há 230 cordas necessárias para um piano para fazer a sua gama completa de som. Há uma enorme pressão sobre essas cordas - mais de 30 toneladas de pressão podem ser exercida em um grande concerto!</p>
+							<label for="jm4-check"><h2>Fechar</h2></label>
+						</div>
+					</div>
+				</li>
+			</ul><img src="imagens/piano-concerto.jpg" class="piano-concerto">
+		</section>
+
+		<section class="clientes" id="clientes">
+			<h3>O que dizem nossos clientes?</h3>
+				<!--Comandos do Slider Auto-->
+				<div class="slider">
+				    <ul>
+				        <li>
+				            <img src="imagens/ana.png">
+				        </li>
+				        <li>
+				            <img src="imagens/maria.png">
+				        </li>
+				        <li>
+				            <img src="imagens/joao.png">
+				        </li>
+				        <li>
+				            <img src="imagens/jose.png">
+				        </li>
+				    </ul>
+				</div>
+				<!--FIm Comandos do Slider Auto-->
+		</section>
+	</main>
+
+	<footer>
+		<img src="imagens/logo.svg" class="logo">
+			<p class="copyright">&copy; Copyright Romelli Pianos 2022</p>
+	</footer>
+
+	<script src="script.js"></script>
+
+	</body>
+

@@ -1,0 +1,286 @@
+body{font-family: 'Montserrat', sans-serif;}
+
+/*Cabeçalho*/
+header{background: black;}
+
+/*Comandos do Menu*/
+#check{display: none;}
+#icone{margin: 30px; position: absolute; cursor: pointer; z-index: 1;}
+.barra{
+	background-color: black;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	transition: all .2s linear;
+	left: -300px;
+}
+nav{width: 100%; position: absolute; margin-top: 80px; cursor: pointer;}
+nav a{
+	display: block;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 12pt;
+	color: white;
+	transition: all .2s linear;
+	border-bottom: 1px solid white;
+}
+nav a:hover{background-color: white; color: black;}
+#check:checked ~ .barra{transform: translateX(300px);}
+/*Fim dos comandos do Menu*/
+
+header h1{text-align: right;}
+
+.logo{width: 30%;}
+
+
+
+
+/*Corpo Home*/
+.go-top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border: .5px solid white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s linear;
+  opacity: .8;
+}
+
+.go-top-btn:hover{background-color: rgb(237,125,49); transition: all .2s linear; cursor: pointer; border: none;}
+
+.go-top-btn img {width: 60%;}
+
+main{background: linear-gradient(#FEFEFE, #888888);}
+
+.informacoes{width: 800px; margin: 0 auto;}
+
+.informacoes p{text-align: justify;}
+
+.titulo-esquerda{text-align: left; font-size: 2em; color: rgb(237,125,49); margin: 1em auto;}
+
+.titulo-esquerda:before{content: "| ";}
+
+.titulo-direita{text-align: right; font-size: 2em; color: rgb(237,125,49); margin: 1em auto;}
+
+.titulo-direita:after{content: " |";}
+
+.curiosidades, .clientes{width: 800px; margin: 0 auto;}
+
+.curiosidades h3, .clientes h3{text-align: center; font-size: 2em; font-weight: bold; margin: 2em 0 1em;}
+
+.lista-curiosidades{width: 40%; display: inline-block; vertical-align: top;}
+
+.lista-curiosidades li, label{line-height: 3; font-size: 20px;}
+
+.lista-curiosidades label:hover{cursor: pointer; text-decoration: underline; color: rgb(237,125,49);}
+
+.piano-concerto{width: 60%; box-shadow: 10px 10px 20px 0 #000000;}
+
+/*Comandos da Janela Modal*/
+.fundo-modal{
+	display: none; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	background: black; 
+	opacity: .9; 
+	width: 100vw; 
+	height: 100vh;
+}
+.janela-modal{
+	margin: 0 auto; 
+	margin-top: 10%; 
+	max-width: 600px; 
+	background-color: white;
+	padding: 10px;
+}
+.janela-modal h1{margin: 10px 0; font-size: 2em;}
+.janela-modal p{margin: 10px 0; padding-top: 20px; line-height: 1.5; border-top: 1px solid rgb(237,125,49);}
+.janela-modal h2{text-align: center; padding: 10px; color: black; background: rgb(237,125,49);}
+#jm-check{display: none;}
+#jm-check:checked ~ .fundo-modal{display: block;}
+/*Fim dos comandos da Janela Modal*/
+
+#jm2-check{display: none;}
+
+#jm2-check:checked ~ .fundo-modal{display: block;}
+
+#jm3-check{display: none;}
+
+#jm3-check:checked ~ .fundo-modal{display: block;}
+
+#jm4-check{display: none;}
+
+#jm4-check:checked ~ .fundo-modal{display: block;}
+
+/*Comandos do Slider Auto*/
+.slider{margin-left: 100px; width: 600px; height: 500px; overflow: hidden;}
+	/*Obs.: altero width e height da .slider de acordo com medidas da img; a img já deve vir com medidas exatas*/
+.slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 400%;
+}
+.slider li{width: 100%; list-style: none;}
+.slider img{width: 100%; height: 100%;}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/*Fim dos Comandos do Slider Auto*/
+
+
+
+
+/*Rodapé*/
+footer{text-align: center; background: url("imagens/bg.jpg"); padding: 40px 0;}
+
+.copyright{color: white; font-size: 13px; margin: 20px 0 0;}
+
+
+
+
+/*Corpo Produto Individual*/
+/*CSS Product-Slider*/
+#product-slider{width: 800px; margin: 0 auto;}
+/*Product-Slider Descrição Produto*/
+#descricao-produto{width: 30%; display: inline-flex; vertical-align: top;}
+.titulo-produto{margin: 10px 0; font-size: 2em;}
+.preco-produto{margin: 10px 0; padding: 20px 0; font-weight: bold;}
+.descricao-produto{margin: 10px 0; padding-top: 20px; line-height: 1.5; border-top: 1px solid rgb(237,125,49);}
+
+#negociar-btn{text-decoration: none; color: white;}
+.negociar{text-align: center; margin-top: 10px; padding: 10px; background-color: black; color: white; border: 1px solid black; border-radius: 10px; transition: all .2s linear;}
+.negociar:hover{opacity: .7; cursor: pointer;}
+
+#volta-produtos-btn{text-decoration: none; color: black;}
+.volta-produtos{font-weight: bold; text-align: center; margin-top: 10px; padding: 10px; background-color: white; color: black; border: 1px solid white; border-radius: 10px; transition: all .2s linear;}
+.volta-produtos:hover{font-weight: normal; color: white; background-color: black; cursor: pointer; transition: all .2s linear; border: none;}
+
+/*Fim Product-Slider Descrição Produto*/
+#product-slider img{width: 100%; display: inline-flex;}
+.card-wrapper{width: 60%; display: inline-flex; margin-left: 5%;}
+.img-display{overflow: hidden; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; transition: all 0.5s;}
+.img-display:hover{cursor: zoom-in; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2);}
+.img-showcase{display: flex; width: 100%; transition: all 0.5s ease;}
+.img-showcase img{min-width: 100%;}
+.img-select{display: flex;}
+.img-item{margin: 0.3rem;}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){margin-right: 0;}
+.img-item:hover{opacity: 0.8;}
+/*Fim CSS Product-Slider*/
+
+
+
+
+/*Corpo Produtos*/
+.produtos{width: 940px;	margin: 0 auto;	padding: 50px 0;}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover{border-color: rgb(237,125,49); cursor: pointer;}
+
+.produtos li:hover h2{font-size: 40px; color: rgb(237,125,49);}
+
+.produtos h2{font-size: 30px; font-weight: bold;}
+
+.produtos a{text-decoration: none; color: black;}
+
+.produto-descricao{font-size: 18px;}
+
+
+
+
+/*Corpo Contato*/
+form{margin: 0 auto; width: 800px;}
+
+select{height: 40px; width: 30%;}
+
+form label, form legend, form p{display: block; font-size: 20px; margin: 0 0 10px;}
+
+.input-padrao{display: block; margin:  0 0 20px; padding: 10px 25px; width: 50%; border: 1px solid black;}
+
+fieldset legend, form p{margin: 20px 0; padding: 10px 0;}
+
+.checkbox{margin: 20px 0; line-height: 40px;}
+
+.enviar{
+width: 40%;
+padding: 15px 0;
+background: black;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border: none;
+border-radius: 10px;
+transition: .5s all;
+}
+
+.enviar:hover{opacity: .7; cursor: pointer;}
+
+table{margin: 1em 0;}
+
+thead{background: #555555; color: white; font-weight: bold;}
+
+td, th{border: 1px solid #000000; padding: 8px 15px;}
+
+.mapa-conteudo{width: 800px; margin: 0 auto;}
+
+.mapa{padding: 1em 0;}
+
+.mapa h1{font-size: 20px; padding-bottom: 2em;}
+
+
+
+
+/*Configuração Responsividade*/
+@media screen and (max-width: 480px){
+	#icone{margin: 10px;}
+	.logo{width: 50%;}
+	.go-top-btn{right: 20px; opacity: .95; height: 40px; width: 40px;}
+	.informacoes{width: 100%;}
+	.titulo-esquerda:before{content: none}
+	.titulo-direita{text-align: left;}
+	.titulo-direita:after{content: none;}
+	.janela-modal{margin-top: 5%;}
+	.curiosidades, .clientes{width: 100%;}
+	.lista-curiosidades, .piano-concerto{display: block; width: 100%;}
+	.lista-curiosidades li{line-height: none; font-size: 1em;}
+	.slider, .slider ul, .slider img{width: 100vw; margin: 0;}
+	.slider{height: 300px;}
+	#product-slider{width: 100%;}
+	.card-wrapper{width: 100%; margin-left: 0;}
+	#descricao-produto{display: block; width: 100%;}
+	.produtos{width: 100%;} 
+	.produtos li{display: block; width: 100%; margin: 1.5% 0; padding: 30px 0;}
+	form{width: 100%; margin-left: 5%;}
+	.mapa-conteudo{width: auto;}
+}
+

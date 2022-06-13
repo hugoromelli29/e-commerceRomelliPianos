@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Romelli Pianos</title>
+		<link rel="stylesheet" href="reset.css">
+   		<link rel="stylesheet" href="romelli.css">
+   		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+	</head>
+	
+	<body>
+
+	<button class="go-top-btn">
+    <img src="imagens/arrow-up.png" alt="arrow up">
+    </button>
+
+	<header>
+
+			<!--Comandos do Menu-->
+				<input type="checkbox" id="check">
+				<label id="icone" for="check"><img src="imagens/menu.svg"></label>
+				<div class="barra">
+				<nav>
+				<a href="home.html" target="_blank">Home</a>
+				<a href="produtos.html" target="_blank">Produtos</a>
+				<a href="contato.html" target="_blank">Fale conosco</a>	
+				</nav>
+				</div>
+			<!--Fim dos comandos do Menu-->
+		    
+			<section>
+				<h1><img src="imagens/logo.svg" class="logo"></h1>
+			</section>
+	</header>
+
+	<main>
+		<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required style="align-items: center;">
+
+				<label for="email">Email</label>
+				<input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="text" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+ 
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere nosso contato?</legend>
+
+					<label><input type="radio" value="email" name="contato">Email</label>
+
+					<label><input type="radio" value="telefone" name="contato">Telefone</label>
+
+					<label><input type="radio" value="whatsapp" name="contato" checked>Whatsapp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+
+				<p>Horário de funcionamento:</p>
+
+				<table id="tabela">
+					<thead>
+						<tr>
+							<th>Dia</th>
+							<th>Horário</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Terça</td>
+							<td>8h - 18h</td>
+						</tr>
+						<tr>
+							<td>Quarta</td>
+							<td>8h - 18h</td>
+						</tr>
+						<tr>
+							<td>Quinta</td>
+							<td>8h - 18h</td>
+						</tr>
+						<tr>
+							<td>Sexta</td>
+							<td>8h - 17h</td>
+						</tr>
+						<tr>
+							<td>Sábado</td>
+							<td>8h - 17h</td>
+						</tr>
+						<!--Como mesclar células
+						<tr>
+							<td colspan="2">Fechado nesta sexta</td>
+						</tr>-->
+					</tbody>
+				</table>
+			</form>
+
+			<section class="mapa">
+			<div class="mapa-conteudo">
+			<h1>Faça uma visita:</h1>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7363.606637551235!2d-50.42149892794696!3d-22.66112061986701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949539990335ab07%3A0x96e6a99d243435e!2sCatedral%20Sagrado%20Cora%C3%A7%C3%A3o%20de%20Jesus%20e%20S%C3%A3o%20Francisco%20de%20Assis!5e0!3m2!1spt-BR!2sbr!4v1654635521959!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			</section>
+
+			<section class="mapa">
+			<div class="mapa-conteudo">
+			<h1>Quick tour pela loja:</h1>
+			<iframe width="100%" height="400" src="https://www.youtube.com/embed/uT-wuMQsk50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			</section>
+
+	</main>
+
+	<footer>
+		<img src="imagens/logo.svg" class="logo">
+		<p class="copyright">&copy; Copyright Romelli Pianos 2022</p>
+	</footer>
+
+	<script src="script.js"></script>
+
+	</body>
