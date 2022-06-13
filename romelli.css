@@ -231,17 +231,7 @@ fieldset legend, form p{margin: 20px 0; padding: 10px 0;}
 
 .checkbox{margin: 20px 0; line-height: 40px;}
 
-.enviar{
-width: 40%;
-padding: 15px 0;
-background: black;
-color: white;
-font-weight: bold;
-font-size: 18px;
-border: none;
-border-radius: 10px;
-transition: .5s all;
-}
+.enviar{width: 40%; padding: 15px 0; background: black; color: white; font-weight: bold; font-size: 18px; border: none; border-radius: 10px; transition: .5s all;}
 
 .enviar:hover{opacity: .7; cursor: pointer;}
 
