@@ -14,15 +14,26 @@
 	<header>
 
 			<!--Comandos do Menu-->
-				<input type="checkbox" id="check">
-				<label id="icone" for="check"><img src="imagens/menu.svg"></label>
-				<div class="barra">
-				<nav>
-				<a href="home.html" target="_blank">Home</a>
-				<a href="produtos.html" target="_blank">Produtos</a>
-				<a href="contato.html" target="_blank">Fale conosco</a>
-				</nav>
-				</div>
+			<input type="checkbox" id="chk">
+			<label for="chk" class="menu-icon"><img src="imagens/menu.svg"></label>
+	
+			<nav class="menu" id="principal">
+				<ul>
+					<li><a href="home.html" target="_blank">Home</a></li>
+					<li><a href="#submenu">Produtos<span>+</span></a></li>
+					<li><a href="contato.html" target="_blank">Contato</a></li>
+				</ul>
+			</nav>
+	
+			<nav class="menu" id="submenu">
+				<ul>
+					<li><a href="#" class="voltar">Voltar para menu</a></li>
+					<li><a href="produtos.html" target="_blank">Todos</a></li>
+					<li><a href="cauda.html" target="_blank" id="subproduto">Cauda</a></li>
+					<li><a href="vertical.html" target="_blank" id="subproduto">Vertical</a></li>
+					<li><a href="eletrico.html" target="_blank" id="subproduto">Elétrico</a></li>
+				</ul>
+			</nav>
 			<!--Fim dos comandos do Menu-->
 		    
 			<section>
