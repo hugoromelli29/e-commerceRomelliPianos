@@ -44,7 +44,7 @@ ul li span{float: right; padding-right: 10px;}
 
 #submenu{width: 300px; left: -300px;}
 
-#submenu:target{transform: translateX(300px);}
+#submenu:target{transform: translateX(300px); position: absolute; z-index: 4; padding-top: 90px;}
 
 #subproduto{padding-left: 50px;}
 /*Fim dos comandos do Menu*/
@@ -273,7 +273,6 @@ td, th{border: 1px solid #000000; padding: 8px 15px;}
 
 /*Configuração Responsividade*/
 @media screen and (max-width: 480px){
-	#icone{margin: 10px;}
 	.logo{width: 50%;}
 	.go-top-btn{right: 20px; opacity: .95; height: 40px; width: 40px;}
 	.informacoes{width: 100%;}
@@ -293,5 +292,8 @@ td, th{border: 1px solid #000000; padding: 8px 15px;}
 	.produtos li{display: block; width: 100%; margin: 1.5% 0; padding: 30px 0;}
 	form{width: 100%; margin-left: 5%;}
 	.mapa-conteudo{width: auto;}
+	.menu-icon{left: 30px;}
+    .menu{margin-top: 70px;}
+    #submenu:target{padding-top: 70px;}
 }
 
