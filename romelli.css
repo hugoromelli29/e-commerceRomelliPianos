@@ -44,7 +44,7 @@ ul li span{float: right; padding-right: 10px;}
 
 #submenu{width: 300px; left: -300px;}
 
-#submenu:target{transform: translateX(300px); position: absolute; z-index: 4; padding-top: 90px;}
+#submenu:target{transform: translateX(300px); margin-top: 10px; padding-top: 80px;}
 
 #subproduto{padding-left: 50px;}
 /*Fim dos comandos do Menu*/
