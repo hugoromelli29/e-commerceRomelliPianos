@@ -1,3 +1,4 @@
+//comandos do slider produtos
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
@@ -16,6 +17,7 @@ function slideImage(){
     document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
 
+//comandos do botão scroll top
 const goTopBtn = document.querySelector('.go-top-btn');
 
 window.addEventListener('scroll', checkHeight)

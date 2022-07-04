@@ -4,26 +4,9 @@ body{font-family: 'Montserrat', sans-serif;}
 header{background: black;}
 
 /*Comandos do Menu*/
-.menu-icon{
-    position: absolute;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    left: 50px;
-    top: 0;
-}
+.menu-icon{position: absolute; font-size: 40px; font-weight: bold; text-align: center; color: white; cursor: pointer; left: 50px; top: 0;}
 
-.menu{
-    margin-top: 90px;
-    color: white;
-    height: 100%;
-    position: fixed;
-    background-color: black;
-    overflow: hidden;
-    transition: all .2s;
-}
+.menu{margin-top: 90px; color: white; height: 100%; position: fixed; background-color: black; overflow: hidden; transition: all .2s;}
 
 #chk{display: none;}
 
@@ -36,6 +19,7 @@ ul li a{display: block; font-size: 18px; padding: 25px 10px; color: #ccc; text-d
 ul li span{float: right; padding-right: 10px;}
 
 #principal li a:hover{background-color: #444;}
+
 #submenu li a:hover{background-color: #444;}
 
 .voltar{border-left: solid 5px rgb(237,125,49);}
@@ -52,9 +36,6 @@ ul li span{float: right; padding-right: 10px;}
 header h1{text-align: right;}
 
 .logo{width: 30%;}
-
-
-
 
 /*Corpo Home*/
 .go-top-btn {
@@ -104,30 +85,22 @@ main{background: linear-gradient(#FEFEFE, #888888);}
 .piano-concerto{width: 60%; box-shadow: 10px 10px 20px 0 #000000;}
 
 /*Comandos da Janela Modal*/
-.fundo-modal{
-	display: none; 
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-	background: black; 
-	opacity: .9; 
-	width: 100vw; 
-	height: 100vh;
-}
-.janela-modal{
-	margin: 0 auto; 
-	margin-top: 10%; 
-	max-width: 600px; 
-	background-color: white;
-	padding: 10px;
-}
+.fundo-modal{display: none; position: fixed; top: 0; left: 0; background: black; opacity: .9; width: 100vw; height: 100vh;}
+
+.janela-modal{margin: 0 auto; margin-top: 10%; max-width: 600px; background-color: white; padding: 10px;}
+
 .janela-modal h1{margin: 10px 0; font-size: 2em;}
+
 .janela-modal p{margin: 10px 0; padding-top: 20px; line-height: 1.5; border-top: 1px solid rgb(237,125,49);}
+
 .janela-modal h2{text-align: center; padding: 10px; color: black; background: rgb(237,125,49);}
+
 #jm-check{display: none;}
+
 #jm-check:checked ~ .fundo-modal{display: block;}
 /*Fim dos comandos da Janela Modal*/
 
+/*Outras modais*/
 #jm2-check{display: none;}
 
 #jm2-check:checked ~ .fundo-modal{display: block;}
@@ -143,12 +116,11 @@ main{background: linear-gradient(#FEFEFE, #888888);}
 /*Comandos do Slider Auto*/
 .slider{margin-left: 100px; width: 600px; height: 500px; overflow: hidden;}
 	/*Obs.: altero width e height da .slider de acordo com medidas da img; a img já deve vir com medidas exatas*/
-.slider ul{
-    display: flex;
-    animation: cambio 15s infinite alternate linear;
-    width: 400%;
-}
+
+.slider ul{display: flex; animation: cambio 15s infinite alternate linear; width: 400%;}
+
 .slider li{width: 100%; list-style: none;}
+
 .slider img{width: 100%; height: 100%;}
 @keyframes cambio{
     0%{margin-left: 0;}
@@ -165,66 +137,64 @@ main{background: linear-gradient(#FEFEFE, #888888);}
 }
 /*Fim dos Comandos do Slider Auto*/
 
-
-
-
 /*Rodapé*/
 footer{text-align: center; background: url("imagens/bg.jpg"); padding: 40px 0;}
 
 .copyright{color: white; font-size: 13px; margin: 20px 0 0;}
 
-
-
-
 /*Corpo Produto Individual*/
 /*CSS Product-Slider*/
 #product-slider{width: 800px; margin: 0 auto;}
+
 /*Product-Slider Descrição Produto*/
 #descricao-produto{width: 30%; display: inline-flex; vertical-align: top;}
+
 .titulo-produto{margin: 10px 0; font-size: 2em;}
+
 .preco-produto{margin: 10px 0; padding: 20px 0; font-weight: bold;}
+
 .descricao-produto{margin: 10px 0; padding-top: 20px; line-height: 1.5; border-top: 1px solid rgb(237,125,49);}
 
 #negociar-btn{text-decoration: none; color: white;}
+
 .negociar{text-align: center; margin-top: 10px; padding: 10px; background-color: black; color: white; border: 1px solid black; border-radius: 10px; transition: all .2s linear;}
+
 .negociar:hover{opacity: .7; cursor: pointer;}
 
 #volta-produtos-btn{text-decoration: none; color: black;}
-.volta-produtos{font-weight: bold; text-align: center; margin-top: 10px; padding: 10px; background-color: white; color: black; border: 1px solid white; border-radius: 10px; transition: all .2s linear;}
-.volta-produtos:hover{font-weight: normal; color: white; background-color: black; cursor: pointer; transition: all .2s linear; border: none;}
 
+.volta-produtos{font-weight: bold; text-align: center; margin-top: 10px; padding: 10px; background-color: white; color: black; border: 1px solid white; border-radius: 10px; transition: all .2s linear;}
+
+.volta-produtos:hover{font-weight: normal; color: white; background-color: black; cursor: pointer; transition: all .2s linear; border: none;}
 /*Fim Product-Slider Descrição Produto*/
+
 #product-slider img{width: 100%; display: inline-flex;}
+
 .card-wrapper{width: 60%; display: inline-flex; margin-left: 5%;}
+
 .img-display{overflow: hidden; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; transition: all 0.5s;}
+
 .img-display:hover{cursor: zoom-in; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2);}
+
 .img-showcase{display: flex; width: 100%; transition: all 0.5s ease;}
+
 .img-showcase img{min-width: 100%;}
+
 .img-select{display: flex;}
+
 .img-item{margin: 0.3rem;}
+
 .img-item:nth-child(1),
 .img-item:nth-child(2),
 .img-item:nth-child(3){margin-right: 0;}
+
 .img-item:hover{opacity: 0.8;}
 /*Fim CSS Product-Slider*/
-
-
-
 
 /*Corpo Produtos*/
 .produtos{width: 940px;	margin: 0 auto;	padding: 50px 0;}
 
-.produtos li{
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
-}
+.produtos li{display: inline-block; text-align: center; width: 30%; vertical-align: top;margin: 0 1.5%; padding: 30px 20px; box-sizing: border-box; border: 2px solid #000000; border-radius: 10px;}
 
 .produtos li:hover{border-color: rgb(237,125,49); cursor: pointer;}
 
@@ -235,9 +205,6 @@ footer{text-align: center; background: url("imagens/bg.jpg"); padding: 40px 0;}
 .produtos a{text-decoration: none; color: black;}
 
 .produto-descricao{font-size: 18px;}
-
-
-
 
 /*Corpo Contato*/
 form{margin: 0 auto; width: 800px;}
@@ -267,9 +234,6 @@ td, th{border: 1px solid #000000; padding: 8px 15px;}
 .mapa{padding: 1em 0;}
 
 .mapa h1{font-size: 20px; padding-bottom: 2em;}
-
-
-
 
 /*Configuração Responsividade*/
 @media screen and (max-width: 480px){
